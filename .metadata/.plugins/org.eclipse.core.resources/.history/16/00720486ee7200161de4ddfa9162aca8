@@ -59,7 +59,7 @@ public class LetterCounter
 			}
 			else
 			{
-				System.out.println((char)(x+65) + "=" + tallyArray[x]);
+				System.out.println((char)(x+65) + "=" + tallyArray[x] + "/n");
 			}
 		}
 	}

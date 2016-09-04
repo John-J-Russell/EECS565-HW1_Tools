@@ -23,23 +23,13 @@ public class LetterCounter
 		rawInput=rawInput.replaceAll("\\s","");
 		System.out.println(rawInput);
 		
-		char[] inputArray = rawInput.toCharArray();
-		
 		//instantiate the tallyArray, and set all values to 0
-		tallyArray = new int[27];
+		tallyArray = new int[26];
 		for(int x=0; x<26; x++)
 		{
 			tallyArray[x]=0;
 		}
 		
-		//progress through entire input, and count each letter.
-		for(int x=0; x<inputArray.length; x++)
-		{
-			countLetter(inputArray[x]);
-		}
-		
-		//display count totals
-		printTally();
 		
 		reader.close();
 	}
@@ -57,14 +47,11 @@ public class LetterCounter
 				//error detection
 				System.out.println("Potential Errors: " + tallyArray[x]);
 			}
-			else
-			{
-				System.out.println((char)(x+65) + "=" + tallyArray[x]);
-			}
+			System.out.println((char)(x+65) + "=" + tallyArray[x] + "/n");
 		}
 	}
 
-	public static void countLetter(char letterEntry)
+	public void countLetter(char letterEntry)
 	{
 		switch (letterEntry){
 		case 'A':   tallyArray[0]=tallyArray[0]+1;

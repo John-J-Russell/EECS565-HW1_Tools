@@ -26,7 +26,7 @@ public class LetterCounter
 		char[] inputArray = rawInput.toCharArray();
 		
 		//instantiate the tallyArray, and set all values to 0
-		tallyArray = new int[27];
+		tallyArray = new int[26];
 		for(int x=0; x<26; x++)
 		{
 			tallyArray[x]=0;
@@ -59,7 +59,7 @@ public class LetterCounter
 			}
 			else
 			{
-				System.out.println((char)(x+65) + "=" + tallyArray[x]);
+				System.out.println((char)(x+65) + "=" + tallyArray[x] + "/n");
 			}
 		}
 	}
