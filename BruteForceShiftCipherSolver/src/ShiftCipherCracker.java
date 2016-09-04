@@ -32,7 +32,7 @@ public class ShiftCipherCracker
 	//modifies input int[], and passes all 25 other incremented variations to printCipherTranslation
 	public static void shiftIt(int[] input)
 	{
-		for (int x=0; x<25; x++)
+		for (int x=0; x<26; x++)
 		{
 			for (int y=0; y<input.length; y++)
 			{
