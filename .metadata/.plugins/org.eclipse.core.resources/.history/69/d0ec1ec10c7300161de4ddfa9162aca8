@@ -13,13 +13,12 @@ public class ShiftCipherCracker
 	{
 		// take in char array
 		Scanner reader = new Scanner(System.in);
-		System.out.println("Insert ciphertext string with or without spaces, no punctuation:");
+		System.out.println("Insert ciphertext string with or without spaces, all caps pls:");
 		String cipherTextInput = reader.nextLine();
 		
 		//regex edit removes all spaces, credit to StackOverflow user
 		//nitro2k01, http://stackoverflow.com/a/5455828
 		cipherTextInput=cipherTextInput.replaceAll("\\s","");
-		cipherTextInput=cipherTextInput.toUpperCase();
 		System.out.println(cipherTextInput);
 		
 		//call the convert strint to int array function

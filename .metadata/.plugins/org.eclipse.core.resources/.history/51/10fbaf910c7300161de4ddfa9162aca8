@@ -21,7 +21,6 @@ public class LetterCounter
 		//regex edit removes all spaces, credit to StackOverflow user
 		//nitro2k01, http://stackoverflow.com/a/5455828
 		rawInput=rawInput.replaceAll("\\s","");
-		rawInput=rawInput.toUpperCase();
 		System.out.println(rawInput);
 		
 		char[] inputArray = rawInput.toCharArray();
